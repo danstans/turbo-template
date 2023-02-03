@@ -2,8 +2,7 @@ import { useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { signIn, signOut } from "next-auth/react";
-import Button from "ui";
-
+import Button from "shared";
 import { api, type RouterOutputs } from "~/utils/api";
 
 const PostCard: React.FC<{

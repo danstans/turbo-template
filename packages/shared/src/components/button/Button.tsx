@@ -1,11 +1,10 @@
 import { RefObject, forwardRef, useRef } from "react";
+import { buttonStyles } from "./Button.styles";
+import { ButtonProps } from "./Button.types";
 import { useButton } from "@react-aria/button";
 import { useHover } from "@react-aria/interactions";
 import { mergeProps } from "@react-aria/utils";
 import cn from "classnames";
-
-import { buttonStyles } from "./Button.styles";
-import { ButtonProps } from "./Button.types";
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (props, forwardedRef) => {
@@ -36,8 +35,6 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     );
 
     const { hoverProps } = useHover({ isDisabled: isLoadingOrDisabled });
-
-    console.log(variant);
 
     return (
       <button

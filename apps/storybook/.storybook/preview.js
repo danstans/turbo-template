@@ -1,4 +1,4 @@
-import "ui/dist/dist.css";
+import "shared/dist/dist.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

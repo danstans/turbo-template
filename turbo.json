@@ -17,6 +17,14 @@
       "persistent": true,
       "cache": false
     },
+    "dev:storybook": {
+      "persistent": true,
+      "cache": false
+    },
+    "dev:ui": {
+      "persistent": true,
+      "cache": false
+    },
     "build": {
       "dependsOn": ["^build", "^db:generate"],
       "outputs": [".next/**", ".expo/**"]
